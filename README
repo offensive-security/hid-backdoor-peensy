@@ -21,8 +21,12 @@ Crude bash script to convert binary files for transfer from the Teensy SD to Win
 This utility should only be used when you are not mounting the SD Storage as a USB Storage device.
 File transfer rate is at around 22 kb/minute. A 100k byte file could take around 5 minutes to be transferred.
  
+Note: This peensy code has been cannibalized from multiple sources, including and not limited to :
 
-
+-- Social Engineering Toolkit
+-- Kautilya
+-- IronGeeks PHUKD library
+-- Various resources on the net.
 
 
 
