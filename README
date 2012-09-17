@@ -1,0 +1,28 @@
+Teensy Penetration Testing Payload
+===================================
+
+This Teensy sketch demonstrates the use of NUM / Scroll / CAPS Lock LEDs to communicate
+back and forth between a Windows computer and the Teensy. Using this method, we can "check"
+for success on execution of scripts, and get the Teensy to react accordingly.
+
+peensy.ino
+-----------
+Requires a Teensy with a soldered SD, and optional DIP switch. More details about this can be 
+found here - http://www.offensive-security.com/offsec/advanced-teensy-penetration-testing-payloads/.
+Make sure to choose: Tools-> USB Type -> Disk (SD Card) for the SD to kick in as a USB Storage device.
+
+peensy-stand-alone.ino
+-----------------------
+Will work on an unmodified Teensy. We simply stripped out all the SD card and DIP switch relevant code.
+
+utils/teensy-payload-split.sh
+-----------------------------
+Crude bash script to convert binary files for transfer from the Teensy SD to Windows, using echo commands.
+This utility should only be used when you are not mounting the SD Storage as a USB Storage device.
+File transfer rate is at around 22 kb/minute. A 100k byte file could take around 5 minutes to be transferred.
+ 
+
+
+
+
+
